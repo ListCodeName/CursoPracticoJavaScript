@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulación de estudio de salarios</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <script src="./funciones.js"></script>
+    <script src="./preciosReferencia.js"></script>
+
+    <div class="img-fondo"></div>
+
+    
+    <div class="contenedor">
+
+        <div class="ventana">
+
+        
+            <div class="calculadora">
+                <form class="campos">
+                    <h1 class="titulo">INGRESE LOS SIGUIENTES DATOS</h1>
+                    <section >
+                        <h2 class="subtitulo">Tipo de cambio</h2>
+                        <div class="info">
+                            <span class="mdi mdi-alert-outline"></span>
+                            <p>Dependiendo del país de orígen, los precios fluctuan en base a muchos factores, por lo que tomamos los valores en dolares como referencia para estandarizar los salarios.</p>    
+                        </div>
+                        
+                        <div class="exchangeValue">
+                            <label for="cambioDolar">Ingrese el valor de 1 dolar en la moneda de su país</label>
+                            <input id="cambioDolar" type="number" placeholder="Redondee el valor...">
+                        </div>
+                        
+                        <div class="salario">
+                            <label for="salarioNeto">Ingrese su salario actual mensual o pretendido</label>
+                            <input id="salarioNeto" type="number" placeholder="Redondee el valor...">
+                        </div>
+
+                    </section>
+
+                    <div class="buttonCont">
+                        <button type="button" onclick="calcularSalario()"> Calcular </button>    
+                    </div>
+                    
+
+                </form>
+
+                <div class="display">
+                    <div class="estadistico">
+                        <h2>Calculo de sueldo</h2>
+
+                        <div class="barraCont">
+                            <div class="barraPersonal" id="barraPersonal"></div>
+                        </div>
+
+                        <div class="infografia">
+                            <div class="tipoProg" id="junior">
+                                <span class="mdi mdi-chevron-right"></span>
+                                <p>Programador Junior</p>
+                            </div>
+                            <div class="tipoProg" id="semisr">
+                                <span class="mdi mdi-chevron-right"></span>
+                                <p>Programador Semi Señor</p>
+                            </div>
+                            <div class="tipoProg" id="sr">
+                                <span class="mdi mdi-chevron-right"></span>
+                                <p>Programador Señor</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="resenia">
+                        <p id="breveResenia">Complete los campos anteriores para obtener su categoría.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

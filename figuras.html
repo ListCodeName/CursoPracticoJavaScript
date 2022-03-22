@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geométricas | Curso de JS Práctico Platzi</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>
+            Figuras geométricas
+        </h1>
+
+        <p>Calcula el área y perímetro de un cuadrado</p>
+
+        <form>
+            <label for="inputCuadrado">
+                Escribe cúanto mide cada lado del cuadrado:
+            </label>
+
+            <input id="inputCuadrado" type="number" > 
+
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el área</button>
+            
+        </form>
+
+        <h1>
+            Reto nro 1 Triángulo isósceles:
+        </h1>
+
+        <p style="font-weight: bold">En este ejercicio debes crear una función para calcular la altura de un triángulo isósceles.</p>
+        <p>La función debe recibir, como parámetros, la longitud de los 3 lados del triángulo.</p>
+        <p>La función debe validar que la longitud de los 3 lados del triángulo corresponden a un triángulo isósceles.</p>
+        <p>La función debe retornar la altura del triángulo.</p>
+
+        <form>
+            <label for="inputTrianguloBase, inputTrianguloLado1, inputTrianguloLado2">
+                Escribe cúanto mide cada lado del triángulo:
+            </label>
+
+            <input id="inputTrianguloBase" type="number" placeholder="Base del Triángulo"> 
+            <input id="inputTrianguloLado1" type="number" placeholder="Lado 1 Del Triángulo">
+            <input id="inputTrianguloLado2" type="number" placeholder="Lado 2 Del Triángulo">
+
+            <button type="button" onclick="calcularAlturaTriangulo()">Calcular altura</button>
+            
+        </form>
+
+    </header>
+
+
+
+    
+    <script src="./figuras.js"></script>
+</body>
+</html>

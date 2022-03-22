@@ -1,0 +1,305 @@
+*{
+    margin: 0px auto;
+    padding: 0px;
+    color: #f1f5f5;
+    font-family: 'Fredoka', sans-serif;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-fondo{
+    background-image: url(https://www.eluniversal.com.mx/sites/default/files/2020/12/17/dinero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+/* Css correspondiente a la vista de Contenedor */
+
+.contenedor{
+    background: rgba(0,0,0,0.35);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    flex-wrap: nowrap;
+
+    transition: all 0.5s ease;
+    left: 0%;
+}
+
+/* Css correspondiente a la vista de Calculadora */
+
+.ventana{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculadora{
+    width: 600px;
+    background: -moz-linear-gradient(#648baf,#48637c);
+    border-radius: 5px;
+    border: 1px solid #7a9bbd;
+    height: auto;
+    box-sizing: border-box;
+    padding: 25px;
+    box-shadow: 0em 0em 1em rgba(0,0,0,0.5);
+}
+
+.campos{
+    width: 100%;
+
+}
+
+.titulo{
+    width: 100%;
+    font-size: 1.8em;
+    font-weight: bolder;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #7a9bbd;
+    padding: 0.5em 0em;
+
+}
+
+section{
+    width: 100%;
+    height: auto;
+    padding: 0.5em 0em;
+
+
+}
+
+.subtitulo{
+    font-size: 1.5em;
+    font-weight: bolder;
+
+}
+
+.info{
+    width: 100%;
+    position: relative;
+    background: rgba(0,0,0,0.1);
+    box-sizing: border-box;
+    padding: 1em;
+    border: 2px solid yellow;
+    box-shadow: 0em 0em 0.5em rgba(0,0,0,0.2);
+    border-radius: 10px;
+    margin: 1em 0em;
+}
+
+.info span{
+    position: absolute;
+    right: 0.5em;
+    top: 0.5em;
+    color: yellow;
+    font-size: 1.5em;
+    text-shadow: 0em 0em 0.5em rgba(0,0,0,0.2);
+}
+
+.info p{
+    width: 100%;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding: 0.2em 0.5em;
+    font-style: italic;
+}
+
+.exchangeValue{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid #648baf;
+    box-sizing: border-box;
+    padding: 0.25em 0.5em;
+    margin: 0.5em 0em;
+}
+
+.exchangeValue label{
+    font-size: 1.1em;
+    width: 50%;
+}
+
+.exchangeValue input{
+    width: 40%;
+    height: 2.5em;
+    box-sizing: border-box;
+    padding: 0.25em;
+    border: 1px solid #7a9bbd;
+    color: #48637c;
+    font-weight: bolder;
+    font-size: 1em;
+    text-indent: 1em;
+    box-shadow: 0em 0em 0.5em rgba(0,0,0,0.3);
+}
+
+.salario{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid #648baf;
+    box-sizing: border-box;
+    padding: 0.25em 0.5em;
+    margin: 0.5em 0em;
+}
+
+.salario label{
+    font-size: 1.1em;
+    width: 50%;
+}
+
+.salario input{
+    width: 40%;
+    height: 2.5em;
+    box-sizing: border-box;
+    padding: 0.25em;
+    border: 1px solid #7a9bbd;
+    font-size: 1em;
+    color: #48637c;
+    font-weight: bolder;
+    text-indent: 1em;
+    box-shadow: 0em 0em 0.5em rgba(0,0,0,0.3);
+
+}
+
+.buttonCont{
+    width: 100%;
+    height: 2.5em;
+    position: relative;
+}
+
+button{
+    width: 150px;
+    height: 2.5em;
+    position: absolute;
+    right: 1em;
+    background: -moz-linear-gradient(#80dcfa,#1e82a0);
+    border: 1px solid #317693;
+    border-radius: 7px;
+    font-size: 1em;
+    font-weight: bolder;
+    cursor: pointer;
+    text-shadow: 0em 0em 0.2em rgba(0,0,0,0.3);
+}
+
+
+
+/*Sección del display */
+
+.display{
+    width: 100%;
+    margin: 1.5em 0em;
+
+}
+
+.estadistico{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.estadistico h2{
+    width: 100%;
+}
+
+.barraCont{
+    width: 100%;
+    height: 1em;
+    background: rgba(255,255,255,0.75);
+    border-radius: 10px;
+    padding: 1px;
+    box-sizing: border-box;
+    border: 2px solid #317693;
+    box-shadow: 0em 0em 0.25em rgba(0,0,0,0.3);
+    margin: 0.5em 0em;
+    position: relative;
+    overflow: hidden;
+}
+
+.barraPersonal{
+    width: 0%;
+    height: 100%;
+    background: -moz-linear-gradient(#80dcfa,#1e82a0);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+}
+
+.infografia{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+
+}
+
+.tipoProg{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.tipoProg span{
+    font-size: 1.5em;
+
+}
+
+.tipoProg p{
+    width: 100%;
+    font-size: 1em;
+}
+
+
+.resenia{
+    width: 100%;
+    height: 5em;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 1em 0em;
+    border-left: 2px solid #648baf;
+
+}
+
+
+
+
+/* Css correspondiente a la vista de fuentes */
+
+.fuentes{
+    width: 100%;
+}

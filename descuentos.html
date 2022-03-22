@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porcentajes y Descuentos | Curso práctico nro 2 de Platzi</title>
+</head>
+<body>
+
+    <header>
+
+        <h1>Porcentajes y descuentos</h1>
+
+        <p>Este es el segundo taller del Curso Práctico</p>
+
+    </header>
+    
+    <section>
+
+        <h2>Calcula el precio a pagar de tus productos con descuentos</h2>
+
+        <form>
+
+            <label for="inputPrecio">Escribe el precio de tu producto</label>
+
+            <input id="inputPrecio" type="number">
+
+            <label for="inputDescuento">Escribe el descuento de tu producto</label>
+
+            <input id="inputDescuento" type="number">
+
+            <button type="button" onclick="calcularNuevoPrecio()">Calcular Descuento</button>
+
+            <p id="resultadoPrecio"></p>
+
+        </form>
+
+
+    </section>
+
+    <section>
+
+        <h2>Reto nro 2 del taller</h2>
+
+        <form>
+
+            <label for="inputPrecioN">Escribe el precio de tu producto</label>
+
+            <input id="inputPrecioN" type="number">
+
+            <label for="inputDescuentoN">Ingresa tu Token de Descuento</label>
+
+            <select id="inputDescuentoN">
+                <option value="10">-10% off</option>
+                <option value="15">-15% off</option>
+                <option value="25">-25% off</option>
+                <option value="50">-50% off</option>
+            </select>
+
+            <button type="button" onclick="calcularNuevoPrecioPractico()">Calcular Descuento</button>
+
+            <p id="resultadoPrecioN"></p>
+
+        </form>
+
+
+    </section>
+
+
+    <script src="./descuentos.js"></script>
+
+</body>
+</html>
